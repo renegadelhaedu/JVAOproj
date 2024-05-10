@@ -6,10 +6,6 @@
 <body>
     <h1>Login</h1>
 
-    {% if error %}
-        <p style="color: red;">{{ error }}</p>
-    {% endif %}
-
     <form method="POST" action="/login">
         <label for="username">Usuário:</label>
         <input type="text" id="username" name="usuario" value="jv" required><br><br>
@@ -19,5 +15,13 @@
 
         <button type="submit">Entrar</button>
     </form>
+    {% if error %}
+        <br>
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <br><br>
+    <a href="/pagecadastrarusuario">Cadastrar novo usuário</a>
+
 </body>
 </html>

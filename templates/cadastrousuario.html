@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Cadastro de novo usuário</h1><br>
+
+    <form action="/cadastrarnovousuario" method="post">
+        <label>Nome</label>
+        <input type="text" name="nome"><br>
+
+        <label>E-mail</label>
+        <input type="text" name="email"><br>
+
+        <label>Senha</label>
+        <input type="password" name="senha"><br>
+
+        <label for="tipo">Escolha o tipo de usuário:</label>
+
+        <select name="tipo">
+            <option value="adm">Administrador</option>
+            <option value="cliente">Cliente</option>
+        </select><br><br>
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+
+</body>
+</html>
